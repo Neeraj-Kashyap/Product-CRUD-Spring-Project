@@ -1,0 +1,236 @@
+{
+	"id": "563d0ba5-d8a8-ef5c-fb35-634982e084e2",
+	"name": "Product",
+	"description": "",
+	"order": [
+		"14177a7e-4211-13d9-ba6e-5adbcaf15730",
+		"6bcf7393-de69-9f70-d6af-84dc1866ebc4",
+		"dd95533c-7511-6cbb-6d42-98565f3b320a",
+		"a2bc07a8-eb33-7657-45bd-0c9ce5815c4c",
+		"81b0567c-4fda-b6b8-5fb8-63bebadeece4",
+		"edbb8e5f-5522-536b-82a8-3e2c2b07e25a",
+		"8c000cca-5f27-4a08-201b-13f1af0f7e74"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1643222167066,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "14177a7e-4211-13d9-ba6e-5adbcaf15730",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/products",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643222345041,
+			"name": "http://localhost:9191/addProducts",
+			"description": "Add the products as a list",
+			"collectionId": "563d0ba5-d8a8-ef5c-fb35-634982e084e2",
+			"responses": [],
+			"rawModeData": "[{\n\t\"name\":\"boAt Airdopes 131 - Wireless Earbuds\",\n\t\"quantity\":\"100\",\n\t\"price\":\"1199.00\"\n},\n{\n\t\"name\":\"AirPods Pro\",\n\t\"quantity\":\"1000\",\n\t\"price\":\"24900.00\"\n},\n{\n\t\"name\":\"Vivo V23 Pro 5G\",\n\t\"quantity\":\"100\",\n\t\"price\":\"38900.00\"\n}]"
+		},
+		{
+			"id": "6bcf7393-de69-9f70-d6af-84dc1866ebc4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/addProduct",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "563d0ba5-d8a8-ef5c-fb35-634982e084e2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9191/addProduct",
+			"description": "Save a single product",
+			"descriptionFormat": "html",
+			"time": 1643222303644,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"name\":\"JBL wave 100 TWS\",\n\t\"quantity\":\"55\",\n\t\"price\":\"3000\"\n}"
+		},
+		{
+			"id": "81b0567c-4fda-b6b8-5fb8-63bebadeece4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/product/Vivo V23 Pro 5G",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "563d0ba5-d8a8-ef5c-fb35-634982e084e2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9191/product/Vivo V23 Pro 5G",
+			"description": "Get the product details by product name",
+			"descriptionFormat": "html",
+			"time": 1643222617084,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "[{\n\t\"name\":\"boAt Airdopes 131 - Wireless Earbuds\",\n\t\"quantity\":\"100\",\n\t\"price\":\"1199.00\"\n},\n{\n\t\"name\":\"AirPods Pro\",\n\t\"quantity\":\"1000\",\n\t\"price\":\"24900.00\"\n},\n{\n\t\"name\":\"Vivo V23 Pro 5G\",\n\t\"quantity\":\"100\",\n\t\"price\":\"38900.00\"\n}]"
+		},
+		{
+			"id": "8c000cca-5f27-4a08-201b-13f1af0f7e74",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/update",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "563d0ba5-d8a8-ef5c-fb35-634982e084e2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9191/update",
+			"description": "Update the details of a product",
+			"descriptionFormat": "html",
+			"time": 1643222910564,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"id\":\"5\",\n\t\"name\":\"AirPods Pro Max\",\n\t\"quantity\":\"900\",\n\t\"price\":\"34900.00\"\n}"
+		},
+		{
+			"id": "a2bc07a8-eb33-7657-45bd-0c9ce5815c4c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/productById/3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "563d0ba5-d8a8-ef5c-fb35-634982e084e2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9191/productById/3",
+			"description": "Get the product details by Id",
+			"descriptionFormat": "html",
+			"time": 1643222551158,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "[{\n\t\"name\":\"boAt Airdopes 131 - Wireless Earbuds\",\n\t\"quantity\":\"100\",\n\t\"price\":\"1199.00\"\n},\n{\n\t\"name\":\"AirPods Pro\",\n\t\"quantity\":\"1000\",\n\t\"price\":\"24900.00\"\n},\n{\n\t\"name\":\"Vivo V23 Pro 5G\",\n\t\"quantity\":\"100\",\n\t\"price\":\"38900.00\"\n}]"
+		},
+		{
+			"id": "dd95533c-7511-6cbb-6d42-98565f3b320a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/products",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "563d0ba5-d8a8-ef5c-fb35-634982e084e2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9191/products",
+			"description": "Get the product details",
+			"descriptionFormat": "html",
+			"time": 1643222370905,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "[{\n\t\"name\":\"boAt Airdopes 131 - Wireless Earbuds\",\n\t\"quantity\":\"100\",\n\t\"price\":\"1199.00\"\n},\n{\n\t\"name\":\"AirPods Pro\",\n\t\"quantity\":\"1000\",\n\t\"price\":\"24900.00\"\n},\n{\n\t\"name\":\"Vivo V23 Pro 5G\",\n\t\"quantity\":\"100\",\n\t\"price\":\"38900.00\"\n}]"
+		},
+		{
+			"id": "edbb8e5f-5522-536b-82a8-3e2c2b07e25a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9191/delete/6",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "563d0ba5-d8a8-ef5c-fb35-634982e084e2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9191/delete/6",
+			"description": "Delet the produc by Id",
+			"descriptionFormat": "html",
+			"time": 1643222722907,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "[{\n\t\"name\":\"boAt Airdopes 131 - Wireless Earbuds\",\n\t\"quantity\":\"100\",\n\t\"price\":\"1199.00\"\n},\n{\n\t\"name\":\"AirPods Pro\",\n\t\"quantity\":\"1000\",\n\t\"price\":\"24900.00\"\n},\n{\n\t\"name\":\"Vivo V23 Pro 5G\",\n\t\"quantity\":\"100\",\n\t\"price\":\"38900.00\"\n}]"
+		}
+	]
+}
